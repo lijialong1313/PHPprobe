@@ -6,6 +6,10 @@ compile on the gcc/g++,might be work on visual studio.
 
 it has been tested on the windows 10 1709.
 
+it just can get the cpu useage and the memory useage.
+
+## how to use
+
 
 
 ## 这是一个PHP的探针，用C语言写的控制台程序
@@ -13,3 +17,7 @@ it has been tested on the windows 10 1709.
 采用GCC编译，理论上支持visual c++，不行的话去看__int64那里
 
 在windows 10 1709版本通过测试。
+
+它只能获得cpu使用率和内存使用率。
+
+## 如何使用

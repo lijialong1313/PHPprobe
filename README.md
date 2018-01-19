@@ -10,7 +10,32 @@ it just can get the cpu useage and the memory useage.
 
 ## how to use
 
+1.put it into someplace where you find,which means
+<program_dir>
 
+notice:you can put it into some PATH place like "C:\Windows\System32\" that can use everywhere
+
+2.compile the program with gcc/g++/vc++ whatever you like.which means
+<program_name> maybe 'probe.exe'
+
+3.run it.
+
+sample:
+probe
+
+output:
+cpu:xx.xx%
+memory:xx.xx%
+
+just cpu:
+probe cpu
+output:
+xx.xx
+
+just memory:
+probe memory
+output:
+xx.xx
 
 ## 这是一个PHP的探针，用C语言写的控制台程序
 

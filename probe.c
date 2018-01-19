@@ -67,7 +67,7 @@ void getMemory(U_CHAR bufPreCPU[5]){
 	MEMORYSTATUSEX statex;
 	statex.dwLength = sizeof(statex);
 	GlobalMemoryStatusEx(&statex);
-	sprintf(bufPreCPU, "%ld", statex.dwMemoryLoad);
+	sprintf(bufPreCPU, "%d.00", statex.dwMemoryLoad);
 }
 
 int main(int argc, char *args[]){
@@ -76,13 +76,13 @@ int main(int argc, char *args[]){
 		//CPU useage
 		if(strcmp("cpu",args[1])==0){
 			getCPU(sysStateCpu);
-			printf("cpu:%s%%\n",sysStateCpu);
+			printf("%s%%",sysStateCpu);
 		}
 		//memory useage
 		else if(strcmp("memory",args[1])==0){
 			
 			getMemory(sysStateCpu);
-			printf("memory:%s%%\n",sysStateCpu);
+			printf("%s%%",sysStateCpu);
 		}
 	}else{
 		getCPU(sysStateCpu);

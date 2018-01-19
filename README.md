@@ -46,3 +46,29 @@ xx.xx
 它只能获得cpu使用率和内存使用率。
 
 ## 如何使用
+
+1.放到一个你能访问的位置
+<program_dir>
+
+注意，你可以放到系统环境目录如 "C:\Windows\System32\" 这就可以在任何地方调用它
+
+2.用gcc/g++/vc++编译，编译出来之后
+<program_name> 可能叫 'probe.exe'
+
+3.运行它
+
+示例：
+probe
+输出：
+cpu:xx.xx%
+memory:xx.xx%
+
+只看CPU:
+probe cpu
+输出:
+xx.xx
+
+只看内存:
+probe memory
+输出:
+xx.xx
